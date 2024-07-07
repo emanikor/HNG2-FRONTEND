@@ -1,0 +1,15 @@
+#Hero{
+    background-image: url('../assets/home.png');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 68.15vh;
+  
+}
+.Hero-container{
+  justify-content: center;
+  align-items: baseline;
+  max-width: 1200px;
+  margin: 0 auto;
+ 
+}
