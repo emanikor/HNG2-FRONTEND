@@ -1,29 +1,57 @@
 import React from 'react'
 import './Hero.css' 
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+// import { Link } from 'react-router-dom';
 
 
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-function Hero() {
+
+export default function Hero() {
   return (
-    <div>
-      <section id='Hero'>
-      <div className='Hero-container'>
-        <div className='contents'>
-          <h2>New Arrival</h2>
-        <h4>Discover the Latest trends- shop New Arrivals Now!</h4>
-       <div className='Home-btn'>
-       <button>
-        Explore Now
-       </button>
-       <button>
-        shop now
-       </button>
-       </div>
-       </div>
-      </div>
-      </section>
-    </div>
-  )
-}
+    <>
+      <Swiper
+        cssMode={true}
+        navigation={true}
+        pagination={true}
+        mousewheel={true}
+        keyboard={true}
+        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        className="mySwiper"
+      >
+         <SwiperSlide className="slide slide1">
+          <div className="content">
+              <h2 className="header">New Arrival</h2>
+              <span className="span">Discover the latest trending- Shop New arrival now  </span>
+              <div className='slide-btn'>
+              <button className="Explore-btn">Explore Now</button>
+              <button className="shop-btn">Shop Now</button>
+              </div>
+            </div>
+         </SwiperSlide>
+        <SwiperSlide className="slide slide2"> <div className="content">
+              <h2 className="header">New Arrival</h2>
+              <span className="span">Discover the latest trending- Shop New arrival now  </span>
+              <div className='slide-btn'>
+              <button className="Explore-btn">Explore Now</button>
+              <button className="shop-btn">Shop Now</button>
+              </div>
+            </div></SwiperSlide>
+        <SwiperSlide className="slide slide3"> 
+        <div className="content">
+              <h2 className="header">New Arrival</h2>
+              <span className="span">Discover the latest trending- Shop New arrival now  </span>
+              <div className='slide-btn'>
+              <button className="Explore-btn">Explore Now</button>
+              <button className="shop-btn">Shop Now</button>
+              </div>
+            </div></SwiperSlide>
 
-export default Hero
+       
+      </Swiper>
+    </>
+  );
+}
