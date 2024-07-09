@@ -87,6 +87,36 @@
     align-items: flex-end;
     font-size: 14px;
   }
+  .category-link {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .category-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: none;
+  }
+  
+  .category-link:hover .category-dropdown {
+    display: block;
+  }
+  
+  .category-dropdown a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-dropdown a:hover {
+    background-color: #f0f0f0;
+  }
   
   /* Media query for smaller screens */
   @media (max-width: 768px) {

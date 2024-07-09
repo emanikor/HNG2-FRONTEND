@@ -1,0 +1,106 @@
+.Jobs-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  .Jobs-container h2{
+    text-align: center;
+    /* font-family: ; */
+    font-size: 2rem;
+    color: rgb(0, 255, 179);
+    padding: 10px;
+  } 
+  .Jobs-container p {
+ 
+    padding: 1px;
+    text-align: center;
+    /* font-family: ; */
+    font-size: 1.3rem;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  .card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    height: 350px;
+    width: 100%;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay .headTitle {
+    margin-top: 10rem;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    text-align: left;
+  }
+  
+  .overlay .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    color: black;
+  }
+  
+  .overlay .buttons .fultime,
+  .overlay .buttons .urgent {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+  }
+  
+  .overlay .buttons .fultime {
+    background-color: #f8faf8;
+  }
+  
+  .overlay .buttons .urgent {
+    background-color: #fafafa;
+  }
+  

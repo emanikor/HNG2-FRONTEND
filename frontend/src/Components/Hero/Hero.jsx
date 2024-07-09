@@ -3,7 +3,7 @@ import './Hero.css'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
@@ -27,7 +27,7 @@ export default function Hero() {
               <h2 className="header">New Arrival</h2>
               <span className="span">Discover the latest trending- Shop New arrival now  </span>
               <div className='slide-btn'>
-              <button className="Explore-btn">Explore Now</button>
+              <Link to={'/treddings'} > <button className="Explore-btn">Explore Now</button></Link>
               <button className="shop-btn">Shop Now</button>
               </div>
             </div>
@@ -36,7 +36,7 @@ export default function Hero() {
               <h2 className="header">New Arrival</h2>
               <span className="span">Discover the latest trending- Shop New arrival now  </span>
               <div className='slide-btn'>
-              <button className="Explore-btn">Explore Now</button>
+              <Link to={'/seller'} > <button className="Explore-btn">Explore Now</button></Link>
               <button className="shop-btn">Shop Now</button>
               </div>
             </div></SwiperSlide>
@@ -45,7 +45,7 @@ export default function Hero() {
               <h2 className="header">New Arrival</h2>
               <span className="span">Discover the latest trending- Shop New arrival now  </span>
               <div className='slide-btn'>
-              <button className="Explore-btn">Explore Now</button>
+              <Link to={'/newseller'} > <button className="Explore-btn">Explore Now</button></Link>
               <button className="shop-btn">Shop Now</button>
               </div>
             </div></SwiperSlide>
